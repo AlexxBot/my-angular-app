@@ -1,0 +1,44 @@
+@import './../../../../app/styles/variables.scss';
+
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    background-color: $primary-color;
+
+    &__menu {
+        flex-grow: 1;
+        ul {
+            display: flex;
+            flex-direction: row;
+
+            li {
+                margin: 0 1rem;
+                list-style: none;
+                a {
+                    text-decoration: none;
+                    color: inherit;
+                }
+
+            }
+        }
+    }
+
+    &__options {
+        button {
+            background-color: $secondary-color;
+            border: none;
+            padding: 0.5rem;
+            border-radius: 5px;
+            cursor: pointer;
+            :hover {
+                //color: $primary-color
+                //font-size: 2rem;
+                //cursor: pointer;
+            }
+        }
+    }
+}
+

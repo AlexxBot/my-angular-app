@@ -1,0 +1,16 @@
+<div class= 'login-container'> 
+    <div class = 'login-container__header'>
+        <h2>Login Page</h2>
+    </div>
+    <div class = 'login-container__body'>
+        <form (ngSubmit) = "login()">
+            <input type="email" name='email' placeholder="email" [(ngModel)] = 'usuario.email'/>
+            <input type='password' name='password' placeholder="password" [(ngModel)] = 'usuario.password'/>
+            <button type='submit'>Login</button>
+        </form>
+        
+    </div>
+    <div class = 'login-container__footer'>
+        <a >sign up</a>
+    </div>
+</div>
